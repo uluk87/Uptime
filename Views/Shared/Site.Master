@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <%: Styles.Render("~/Content/css") %>
+    <%: Scripts.Render("~/bundles/jquery")%>
+    <%: Scripts.Render("~/bundles/scripts")%>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>
